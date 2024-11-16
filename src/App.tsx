@@ -29,12 +29,18 @@ function App() {
   return (
     <div className={classes.app}>
       <p className={classes.counter}>{counter}</p>
-
-      <button onClick={stop === null || stop ? submitHandler : stopHandler}>
-        {stop === null || stop ? 'Start' : 'Pause'}
-      </button>
-      {/* <button onClick={stopHandler}>Stop</button> */}
-      <button onClick={resetHandler}>Reset</button>
+      <div className={classes.btnContainer}>
+        <button
+          className={classes.btn}
+          onClick={stop === null || stop ? submitHandler : stopHandler}
+        >
+          {stop === null || stop ? 'Start' : 'Pause'}
+        </button>
+        {/* <button onClick={stopHandler}>Stop</button> */}
+        <button className={classes.btn} onClick={resetHandler}>
+          Reset
+        </button>
+      </div>
     </div>
   )
 }

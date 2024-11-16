@@ -1,0 +1,26 @@
+.app {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+.counter {
+  font-size: 40px;
+}
+.btnContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.btn {
+  all: unset;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 600;
+}
